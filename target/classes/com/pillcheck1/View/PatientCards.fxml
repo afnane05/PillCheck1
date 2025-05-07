@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane prefHeight="187.0" prefWidth="268.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="118.0" prefWidth="113.0" style="-fx-background-radius: 50;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="prenomLabel" layoutX="98.0" layoutY="68.0" text="Prenom ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomLabel" layoutX="98.0" layoutY="27.0" prefHeight="17.0" prefWidth="98.0" text="Nom">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="83.0" fitWidth="86.0" layoutX="6.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../resources/patient_icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="maladieLabel" layoutX="98.0" layoutY="109.0" text="Maladie">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

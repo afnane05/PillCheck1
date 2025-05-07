@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane id="emptyLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="636.0" style="-fx-background-color: #e8e1e1;">
+         <left>
+            <VBox prefHeight="364.0" prefWidth="92.0" style="-fx-background-radius: 50; -fx-background-color: #c2d3e0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" prefHeight="30.0" prefWidth="58.0" text="Acceuil" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="17.0" top="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" prefHeight="30.0" prefWidth="58.0" text="Mes patients" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" prefHeight="30.0" prefWidth="58.0" text="Mes ttraitements" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" prefHeight="30.0" prefWidth="58.0" text="Rendez-vous" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" prefHeight="30.0" prefWidth="58.0" text="Statistique" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" prefHeight="30.0" prefWidth="58.0" text="Compte" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" mouseTransparent="true" prefHeight="30.0" prefWidth="58.0" text="Paramètre" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="17.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="53.0" prefWidth="636.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" top="7.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../../../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <HBox prefHeight="24.0" prefWidth="358.0" style="-fx-background-radius: 50; -fx-background-color: #FFFFFF;">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" top="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fitHeight="48.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="20.0" top="5.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../images/loup.png" />
+                           </image>
+                        </ImageView>
+                        <TextField opacity="0.39" prefHeight="25.0" prefWidth="288.0" text="Effectuer une recherche...">
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <FlowPane id="cardsContainer" fx:id="cardsContainer" alignment="TOP_CENTER" columnHalignment="RIGHT" prefHeight="394.0" prefWidth="410.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="90.0" />
+               </BorderPane.margin>
+            </FlowPane>
+         </right>
+      </BorderPane>
+      <VBox prefHeight="260.0" prefWidth="419.0">
+         <children>
+            <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="54.0" prefWidth="52.0" style="-fx-background-color: #c2d3e0; -fx-background-radius: 50;" text="+" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="565.0" top="370.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
